@@ -161,19 +161,20 @@ export default function App() {
 
         {/* CTA Button */}
         <motion.a
+          id="enterBtn"
           href="https://t.crdtg2.com/408842/9953/37712?aff_sub5=SF_006OG000004lmDN"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className="block w-full py-4 bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] text-white text-center font-black text-xl uppercase tracking-tight rounded-2xl shadow-[0_0_30px_rgba(255,75,43,0.5)] relative overflow-hidden group"
+          className="block w-full py-6 bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] text-white text-center font-black uppercase rounded-2xl shadow-[0_0_50px_rgba(255,75,43,0.7)] relative overflow-hidden group"
         >
           <motion.div
             animate={{ x: ['-100%', '200%'] }}
             transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
             className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12"
           />
-          <span className="relative flex flex-col leading-tight">
-            <span>Alter bestätigen zum</span>
-            <span>Antworten</span>
+          <span className="relative flex flex-col leading-none gap-2">
+            <span className="text-[15px] tracking-wide">Alter bestätigen zum</span>
+            <span className="text-[34px] tracking-tight">Antworten</span>
           </span>
         </motion.a>
 
